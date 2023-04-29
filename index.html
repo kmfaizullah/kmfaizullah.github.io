@@ -1,303 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-     <title>Faizullah Portfolio</title>
-     <link rel="icon" type="image/x-icon" href="images/4411341.png"> 
+	<title>Faizullah Portfolio</title>
+	<link rel="icon" type="image/x-icon" href="images/4411341.png">
 
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="">
-     <meta name="author" content="">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
-     <link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/aos.css">
 
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/tooplate-gymso-style.css">
-	
-     	<style>
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="css/tooplate-gymso-style.css">
+
+	<style>
 		.carousel-control-prev-icon,
 		.carousel-control-next-icon {
-		  height: 50px;
-		  width: 50px;
-/* 		  outline: black;
+			height: 50px;
+			width: 50px;
+			/* 		  outline: black;
 		  background-size: 100%, 100%;
 		  border-radius: 50%;
 		  border: 1px solid black; */
-		  background-image: none;
+			background-image: none;
 		}
 
-		.carousel-control-next-icon:after
-		{
-		  content: '>';
-		  font-size: 35px;
-		  color: red;
+		.carousel-control-next-icon:after {
+			content: '>';
+			font-size: 35px;
+			color: red;
 		}
 
 		.carousel-control-prev-icon:after {
-		  content: '<';
-		  font-size: 35px; 
-		  color: red;
+			content: '<';
+			font-size: 35px;
+			color: red;
+		}
+
+		/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+		.resume .resume-title {
+			font-size: 26px;
+			font-weight: 700;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			color: #050d18;
+		}
+
+		.resume .resume-item {
+			padding: 0 0 20px 20px;
+			margin-top: -2px;
+			border-left: 2px solid #1f5297;
+			position: relative;
+		}
+
+		.resume .resume-item h4 {
+			line-height: 18px;
+			font-size: 18px;
+			font-weight: 600;
+			/* text-transform: uppercase; */
+			font-family: "Poppins", sans-serif;
+			color: #050d18;
+			margin-bottom: 10px;
+		}
+
+		.resume .resume-item h5 {
+			font-size: 16px;
+			/* background: #e4edf9; */
+			/* padding: 5px 15px; */
+			display: inline-block;
+			font-weight: 600;
+			margin-bottom: 10px;
+		}
+
+		.resume .resume-item ul {
+			padding-left: 20px;
+		}
+
+		.resume .resume-item ul li {
+			padding-bottom: 10px;
+		}
+
+		.resume .resume-item:last-child {
+			padding-bottom: 0;
+		}
+
+		.resume .resume-item::before {
+			content: "";
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			border-radius: 50px;
+			left: -9px;
+			top: 0;
+			background: #fff;
+			border: 2px solid #1f5297;
 		}
 	</style>
-<!--
+	<!--
 Tooplate 2119 Gymso Fitness
 https://www.tooplate.com/view/2119-gymso-fitness 
 -->
 </head>
+
 <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
 
-    <!-- MENU BAR -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
+	<!-- MENU BAR -->
+	<nav class="navbar navbar-expand-lg fixed-top">
+		<div class="container">
 
-            <a class="navbar-brand" href="index.html">Faizullah</a>
+			<a class="navbar-brand" href="index.html">Faizullah</a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-lg-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link smoothScroll">Home</a>
-                    </li>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-lg-auto">
+					<li class="nav-item">
+						<a href="#home" class="nav-link smoothScroll">Home</a>
+					</li>
 
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link smoothScroll">About Me</a>
-                    </li>
+					<li class="nav-item">
+						<a href="#about" class="nav-link smoothScroll">About Me</a>
+					</li>
 
-                    <li class="nav-item">
-                        <a href="#class" class="nav-link smoothScroll">Courses & Certificates</a>
-                    </li>
+					<li class="nav-item">
+						<a href="#class" class="nav-link smoothScroll">Courses & Certificates</a>
+					</li>
 
-                    <li class="nav-item">
-                        <a href="#schedule" class="nav-link smoothScroll">Experience</a>
-                    </li>
-			
-		    <li class="nav-item">
-                        <a href="#publications" class="nav-link smoothScroll">Publications</a>
-                    </li>
+					<li class="nav-item">
+						<a href="#schedule" class="nav-link smoothScroll">Experience</a>
+					</li>
 
-<!--                     <li class="nav-item">
-                        <a href="#contact" class="nav-link smoothScroll">Projects</a>
-                    </li>
-                     -->
-
-                    <li class="nav-item">
-                        <a href="#extra" class="nav-link smoothScroll">Extracurricular</a>
-                    </li>
-
-                    <!-- <li class="nav-item">
-                        <a href="#contact" class="nav-link smoothScroll">Certificate & Awards</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link smoothScroll">Contact Me</a>
-                    </li> -->
-                </ul>
-            </div>
-
-        </div>
-    </nav>
+					<li class="nav-item">
+						<a href="#publications" class="nav-link smoothScroll">Publications</a>
+					</li>
 
 
-     <!-- HERO -->
-     <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
+					<li class="nav-item">
+						<a href="#extra" class="nav-link smoothScroll">Extracurricular</a>
+					</li>
 
-            <div class="bg-overlay"></div>
+				</ul>
+			</div>
 
-               <div class="container">
-                    <div class="row">
-
-                         <div class="col-lg-8 col-md-10 mx-auto col-12">
-                              <div class="hero-text mt-5 text-center">
-
-                                    <h6 data-aos="fade-up" data-aos-delay="300">Hello everyone!</h6>
-
-                                    <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">This is K. M. Faizullah Fuhad</h1>
-				     <h6 data-aos="fade-up" data-aos-delay="300">Welcome to my world !!</h6>
-
-                                    <a href="#feature" class="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600">Download Resume</a>
-
-                                    <a href="#about" class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="680">learn more</a>
-                                   
-                              </div>
-                         </div>
-
-                    </div>
-               </div>
-     </section>
+		</div>
+	</nav>
 
 
-     <section class="feature" id="feature">
-        <div class="container">
-            <div class="row">
+	<!-- HERO -->
+	<section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
 
-                <div class="d-flex flex-column justify-content-center ml-lg-auto mr-lg-6 col-lg-6 col-md-6 col-12">
-                    <h3 class="mb-3 text-white" data-aos="fade-up">Would Like to connect with me?</h3>
+		<div class="bg-overlay"></div>
 
-                    <span class="mb-4 text-white" data-aos="fade-up">Please find me in the followings </span>
-			<ul class="social-icon text-center">
-			    <li><a style="font-size: 25px;" href="https://github.com/kmfaizullah" class="fa fa-github"></a></li>
-			    <li><a style="font-size: 25px;" href="https://www.linkedin.com/in/k-m-faizullah-fuhad/" class="fa fa-linkedin"></a></li>
-			    <li><a style="font-size: 25px;" href="https://scholar.google.com/citations?user=l8P4X6oAAAAJ&hl=en" class="fa fa-book"></a></li>
-			</ul>
-                    <a href="https://drive.google.com/file/d/1gE2nQDR-oPyiHbXQa-dlxy08QPD1uMgk/view?usp=sharing" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300" download>Download My Resume</a>
-                </div>
+		<div class="container">
+			<div class="row">
 
-                <div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12">
-                     <div class="about-working-hours text-center">
-                          <div>
+				<div class="col-lg-8 col-md-10 mx-auto col-12">
+					<div class="hero-text mt-5 text-center">
 
-                                <h4 class="text-white" data-aos="fade-up" data-aos-delay="500">Email Address</h4>
+						<h6>Hello everyone!</h6>
 
-                               <span class="text-white" data-aos="fade-up" data-aos-delay="600">faizullahfuhad@gmail.com</span>
-<!-- 				<span class=" text-white" data-aos="fade-up" data-aos-delay="600">faizullah.fuad@northsouth.edu</span> -->
-				
-<!-- 				<h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="500">Secondary Email</h2>
+						<h1 class="text-white">This is K. M. Faizullah Fuhad
+						</h1>
+						<h6>Welcome to my world !!</h6>
 
-                               <strong class="d-block" data-aos="fade-up" data-aos-delay="600">faizullah.fuad@northsouth.edu</strong> -->
-				  
-				<h4 class="mt-3 text-white" data-aos="fade-up" data-aos-delay="500">Contact Number</h4>
-				
-				 <span class="text-white" data-aos="fade-up" data-aos-delay="600">+880 1749406545,</span>
-				  
-				  <span class="text-white" data-aos="fade-up" data-aos-delay="600">+880 1521230171</span> 
+						<a href="#feature" class="btn custom-btn mt-3">Download
+							Resume</a>
 
-<!--                                 <p data-aos="fade-up" data-aos-delay="800">7:00 AM - 10:00 PM</p>
+						<a href="#about" class="btn custom-btn bordered mt-3">learn more</a>
 
-                                <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Saturday</strong>
+					</div>
+				</div>
 
-                                <p data-aos="fade-up" data-aos-delay="800">6:00 AM - 4:00 PM</p> -->
-                               </div>
-                          </div>
-                     </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
+			</div>
+		</div>
+	</section>
 
 
-     <!-- ABOUT -->
-     <section class="about section" id="about">
-               <div class="container">
-                    <div class="row">
-			    <div class="mt-lg-7 mb-lg-0 mb-4 col-lg-7 col-md-10 col-12">
-				<h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Know Me More !!</h3>
+	<section class="feature" id="feature" data-aos="fade-up">
+		<div class="container">
+			<div class="row">
 
-				<p data-aos="fade-up" data-aos-delay="400" style="text-align: justify">
-					
-					A computer science graduate having “Magna Cum Laude” distinction for academic excellence with 
-					demonstrated experience in Software Industry, Research Lab and Academia. Over the last three years, in both 
-					the research lab and software industry, I have been working on developing cost-effective, large and scalable 
-					solutions for different real life problems. Over the years, experience to work with modern cutting edge 
-					technologies helps me to become a versatile, strong engineering professional. 
-					Being motivated with the quote “Knowledge is power” I always love to obtain knowledge. 
-					It will be a pleasure if my little knowledge and dedication to work helps mankind in the foreseeable future. 
-				</p>
+				<div class="d-flex flex-column justify-content-center ml-lg-auto mr-lg-6 col-lg-6 col-md-6 col-12">
+					<h3 class="mb-3 text-white">Would Like to connect with me?</h3>
+
+					<span class="mb-4 text-white">Please find me in the followings </span>
+					<ul class="social-icon text-center">
+						<li><a style="font-size: 25px;" href="https://github.com/kmfaizullah" class="fa fa-github"></a>
+						</li>
+						<li><a style="font-size: 25px;" href="https://www.linkedin.com/in/k-m-faizullah-fuhad/"
+								class="fa fa-linkedin"></a></li>
+						<li><a style="font-size: 25px;"
+								href="https://scholar.google.com/citations?user=l8P4X6oAAAAJ&hl=en"
+								class="fa fa-book"></a></li>
+					</ul>
+					<a href="https://drive.google.com/file/d/1gE2nQDR-oPyiHbXQa-dlxy08QPD1uMgk/view?usp=sharing"
+						class="btn custom-btn bg-color mt-3" download>Download
+						My Resume</a>
+				</div>
+
+				<div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12">
+					<div class="about-working-hours text-center">
+						<div>
+
+							<h4 class="text-white">Email Address</h4>
+
+							<span class="text-white">faizullahfuhad@gmail.com</span>
+
+							<h4 class="mt-3 text-white">Contact Number</h4>
+
+							<span class="text-white">+880 1749406545,</span>
+
+							<span class="text-white">+880 1521230171</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		</div>
+	</section>
 
 
-			    </div>
+	<!-- ABOUT -->
+	<section class="about section" id="about">
+		<div class="container">
+			<div class="row" data-aos="fade-up">
+				<div class="mt-lg-2 mb-lg-0 mb-4 col-lg-12 col-md-12 col-12">
+					<h3 class="mb-4">About</h3>
+					<p>
+						Meet <b>K. M. Faizullah Fuhad</b>, a dynamic and accomplished computer science graduate who is
+						making waves in the tech industry.
+						Currently working as a <b>Software Engineer-II </b>at <b>Pathao Ltd</b>, brings a wealth of
+						experience in both industry and academia.
+					</p>
+					<div class="row">
+						<div class="col-lg-8 pt-4 pt-lg-0 content" style="text-align: justify">
 
-			    <div class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="800">
-				<div class="team-thumb ml-lg-5">
-				    <img src="images/team/EmbeddedImage.jpg" class="img-fluid" alt="Faizullah" style="max-height: 340px; min-width:350px">
-				</div>  
-			    </div>
+							With a strong academic background, including receiving the `<i>Magna Cum Laude</i>`
+							distinction for outstanding
+							academic performance, he has excelled in a range of academic roles, <b>including Research
+								Assistant (RA)</b>, <b>Teaching Assistant (TA)</b>,
+							and <b>Lab Instructor</b> at one of the renowned university in Bangladesh, <b>North South
+								University (NSU)</b>.
+							His commitment to sharing knowledge and expertise with others has made him a skilled and
+							dedicated educator. <br><br>
 
-                    </div>
-		    <div class="row">
-                            <div class="mt-lg-6 mb-lg-0 mb-4 col-lg-7 col-md-6 mx-auto col-12">
-				 <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education </h3>
+							In addition to academic achievements, he has also made significant contributions
+							to cutting-edge research projects, resulting in several research publications in top-tier
+							journals and conference.
+							These contributions demonstrates his passion for innovation and commitment to advancing the
+							field of computer science. <br><br>
+
+							As a software engineer at Pathao Ltd, currently he is working on developing innovative
+							solutions to complex problems,
+							with a focus on improving financial services for people across Bangladesh named Pathao Pay.
+							The company's commitment to
+							empowering people and transforming lives through technology aligns perfectly with his values
+							and aspirations. <br><br>
+
+						</div>
+						<div class="col-lg-4">
+							<img src="images/fprofile.png" class="img-fluid mt-0" style="height: 325px;
+							width: 343px;" alt="">
+						</div>
+					</div>
+					With a diverse range of skills and experience, he can be a good fit and a valuable asset to any
+					team.
+					He is poised to make even greater contributions in the years to come by leveraging his hardwork,
+					dedication and determination.
+				</div>
+
+			</div>
+
+			<div class="row" data-aos="fade-up">
+				<div class="mt-lg-2 mb-lg-0 mb-4 col-lg-12 col-md-12 col-12">
+					<div class="row">
+						<div class="col-lg-6 pt-4 pt-lg-0 content resume" style="text-align: justify">
+							<h3 class="mb-4 mt-4">Education</h3>
+							<div class="resume-item">
+								<h4> BSc. in Computer Science &amp; Engineering</h4>
+								<h5 class="font-italic">Jan. 2016 - Dec. 2019</h5> <br>
+								<p class="font-italic">North South University (NSU), Dhaka, Bangladesh</p>
+								<p><b>CGPA : </b> <i>3.76</i> out of <i>4.00 [Obtained approx 91% marks]</i></p>
+							</div>
+							<div class="resume-item">
+								<h4>Higher Secondary School Certificate (HSC)</h4>
+								<h5 class="font-italic">Mar. 2011 - Apr. 2013</h5>
+								<p class="font-italic">Amrita Lal Dey College, Barishal, Bangladesh</p>
+								<p><b>GPA : </b> <i>5.00</i> out of <i>5.00</i></p>
+							</div>
+							<div class="resume-item">
+								<h4>Secondary School Certificate (SSC)</h4>
+								<h5 class="font-italic">Jan. 2006 - Mar. 2011</h5>
+								<p class="font-italic">Udayan Secondary School, Barishal, Bangladesh</p>
+								<p><b>GPA : </b> <i>5.00</i> out of <i>5.00</i></p>
+							</div>
+
+						</div>
+						<div class="col-lg-6" style="text-align: justify">
+							<h3 class="mb-4 mt-4">Awards & Acheivement</h3>
+							<ul style="list-style-type:square; text-align: justify">
+								<li><span class="font-italic"> Magna Cum Laude </span> distinction for academic
+									excellence.
+								</li>
+								<li>Secured 4<sup>th</sup> position in the Innovation challenge-8 competition (Final year project
+									showcase).</li>
+								<li>75% scholarship on tuition fees in recognition of excellent academic performances.
+								</li>
+								<li>Secured the 9<sup>th</sup> position at eval.ai object detection in wild competition.</li>
+							</ul>
+
+							<h3 class="mb-4 mt-4">Skills</h3>
+							<div class="row">
+								<div class="col-lg-3 col-md-5 col-12">
+									<span class="font-weight-bold">Languages </span>
+								</div>
+								<div class="col-lg-9 col-md-6 col-12">
+									<span class="font-italic"> Python, Go, Java, Java Script, C</span>
+								</div>
+							</div>
+							<hr style="margin-top:3px; margin-bottom:3px">
+							<div class="row">
+								<div class="col-lg-3 col-md-6 col-12">
+									<span class="font-weight-bold">Frameworks </span>
+								</div>
+								<div class="col-lg-9 col-md-6 col-12">
+									<span class="font-italic"> Django, DRF, Fiber, Chi, Node.js, Flask, Pytest</span>
+								</div>
+							</div>
+							<hr style="margin-top:3px; margin-bottom:3px">
+							<div class="row">
+								<div class="col-lg-3 col-md-6 col-12">
+									<span class="font-weight-bold">Others </span>
+								</div>
+								<div class="col-lg-9 col-md-6 col-12">
+									<span class="font-italic"> Git, AWS, AWS-Lambda, Docker, Elasticsearch, Apache
+										Airflow, Kafka, Redis,
+										Apache Spark, Pandas, Numpy, PostgreSQL, MySQL, TensorFlow, OpenCV, Sklearn,
+										Jira</span>
+								</div>
+							</div>
+							<hr style="margin-top:3px; margin-bottom:3px">
+							<div class="row" >
+								<div class="col-lg-3 col-md-6 col-12">
+									<span class="font-weight-bold">OS </span>
+								</div>
+								<div class="col-lg-9 col-md-6 col-12">
+									<span class="font-italic"> Linux, Mac OS, Windows</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- <div class="row">
+			<div class="mt-lg-6 mb-lg-0 mb-4 col-lg-7 col-md-6 mx-auto col-12">
+				<h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education </h3>
 				<p data-aos="fade-up" data-aos-delay="600" style="text-align: justify">
 					<span class="font-weight-bold"> B.Sc in Computer Science and Engineering </span> <br>
 					<span class="font-italic"> North South University, Dhaka, Bangladesh </span> <br>
 					<span class=""> January 2016 - December 2019 </span> <br>
-					<span class="font-weight-bold" > CGPA : <span class="font-italic"> 3.76 </span></span> out of 4.00 <br>
-					<span class="font-weight-bold" > Honors & Awards: </span> <span class="font-italic"> "Magna Cum Laude" </span> for academic excellence
+					<span class="font-weight-bold"> CGPA : <span class="font-italic"> 3.76 </span></span> out of
+					4.00 <br>
+					<span class="font-weight-bold"> Honors & Awards: </span> <span class="font-italic"> "Magna Cum
+						Laude" </span> for academic excellence
 				</p>
-				
+
 				<p data-aos="fade-up" data-aos-delay="700" style="text-align: justify">
 					<span class="font-weight-bold"> Higher Secondary School Certificate (HSC) </span> <br>
 					<span class="font-italic"> Amrita Lal Dey College, Barishal, Bangladesh </span> <br>
 					<span class=""> March 2011 - April 2013 </span> <br>
-					<span class="font-weight-bold" > GPA : <span class="font-italic"> 5.00 </span></span> out of 5.00 <br>
+					<span class="font-weight-bold"> GPA : <span class="font-italic"> 5.00 </span></span> out of 5.00
+					<br>
 				</p>
-				    
+
 				<p data-aos="fade-up" data-aos-delay="700" style="text-align: justify">
 					<span class="font-weight-bold"> Secondary School Certificate (SSC) </span> <br>
 					<span class="font-italic"> Udayan Secondary School, Barishal, Bangladesh </span> <br>
 					<span class=""> March 2011 </span> <br>
-					<span class="font-weight-bold" > GPA : <span class="font-italic"> 5.00 </span></span> out of 5.00 <br>
+					<span class="font-weight-bold"> GPA : <span class="font-italic"> 5.00 </span></span> out of 5.00
+					<br>
 				</p>
 
-                            </div>
+			</div>
 
-                            <div class="mt-5 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12" data-aos="fade-up" data-aos-delay="800"  style="text-align: justify">
-                              
+			<div class="mt-5 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12" data-aos="fade-up" data-aos-delay="800"
+				style="text-align: justify">
+
 				<h3 class="mb-4" data-aos="fade-up" data-aos-delay="600">Skills </h3>
-				    <div class="row" data-aos="fade-up" data-aos-delay="500">
-					    <div class="col-lg-3 col-md-5 col-12">
-					    	<span class="font-weight-bold">Languages </span>
-					    </div>
-					     <div class="col-lg-9 col-md-6 col-12">
-					    	<span class="font-italic"> Python, Java, Java Script, C, C++</span>
-					    </div>
-				    </div>
-				    <hr style="margin-top:3px; margin-bottom:3px">
-				    <div class="row" data-aos="fade-up" data-aos-delay="500">
-					    <div class="col-lg-3 col-md-6 col-12">
-					    	<span class="font-weight-bold">Frameworks </span>
-					    </div>
-					     <div class="col-lg-9 col-md-6 col-12">
-					    	<span class="font-italic"> Django, DRF, Node.js, Vue.js, Codeigniter, Flask, Pytest</span>
-					    </div>
-				    </div>
-				    <hr style="margin-top:3px; margin-bottom:3px">
-				    <div class="row" data-aos="fade-up" data-aos-delay="500">
-					    <div class="col-lg-3 col-md-6 col-12">
-					    	<span class="font-weight-bold">Others </span>
-					    </div>
-					     <div class="col-lg-9 col-md-6 col-12">
-					    	<span class="font-italic"> Git, AWS, AWS-Lambda, Docker, Elasticsearch, Apache Airflow, Apache Spark, Pandas, Numpy, PostgreSQL, MySQL, TensorFlow, OpenCV, Sklearn, Jira</span>
-					    </div>
-				    </div>
-				    <hr style="margin-top:3px; margin-bottom:3px">
-				    <div class="row" data-aos="fade-up" data-aos-delay="600">
-					    <div class="col-lg-3 col-md-6 col-12">
-					    	<span class="font-weight-bold">OS </span>
-					    </div>
-					     <div class="col-lg-9 col-md-6 col-12">
-					    	<span class="font-italic"> Linux, Mac OS, Windows</span>
-					    </div>
-				    </div>
-				    
-				    <h3 class="mb-3 mt-5" data-aos="fade-up" data-aos-delay="590">Awards & Acheivement</h3>
-				    <div class="row" data-aos="fade-up" data-aos-delay="500">
-					    <ul style="list-style-type:square;">
-						   <li><span class="font-italic"> Magna Cum Laude </span> distinction for academic excellence.</li>
-						  <li>Secured 4th position in the Innovation challenge-8 competition (Final year project showcase).</li>
-						  <li>75 % scholarship on tuition fees in recognition of excellent academic performances.</li>
-						  <li>Secured the 9th position at eval.ai object detection in wild competition.</li>
-					    </ul>	
-				    </div>
-				    
-                            </div>
+				<div class="row" data-aos="fade-up" data-aos-delay="500">
+					<div class="col-lg-3 col-md-5 col-12">
+						<span class="font-weight-bold">Languages </span>
+					</div>
+					<div class="col-lg-9 col-md-6 col-12">
+						<span class="font-italic"> Python, Java, Java Script, C, C++</span>
+					</div>
+				</div>
+				<hr style="margin-top:3px; margin-bottom:3px">
+				<div class="row" data-aos="fade-up" data-aos-delay="500">
+					<div class="col-lg-3 col-md-6 col-12">
+						<span class="font-weight-bold">Frameworks </span>
+					</div>
+					<div class="col-lg-9 col-md-6 col-12">
+						<span class="font-italic"> Django, DRF, Node.js, Vue.js, Codeigniter, Flask, Pytest</span>
+					</div>
+				</div>
+				<hr style="margin-top:3px; margin-bottom:3px">
+				<div class="row" data-aos="fade-up" data-aos-delay="500">
+					<div class="col-lg-3 col-md-6 col-12">
+						<span class="font-weight-bold">Others </span>
+					</div>
+					<div class="col-lg-9 col-md-6 col-12">
+						<span class="font-italic"> Git, AWS, AWS-Lambda, Docker, Elasticsearch, Apache Airflow,
+							Apache Spark, Pandas, Numpy, PostgreSQL, MySQL, TensorFlow, OpenCV, Sklearn, Jira</span>
+					</div>
+				</div>
+				<hr style="margin-top:3px; margin-bottom:3px">
+				<div class="row" data-aos="fade-up" data-aos-delay="600">
+					<div class="col-lg-3 col-md-6 col-12">
+						<span class="font-weight-bold">OS </span>
+					</div>
+					<div class="col-lg-9 col-md-6 col-12">
+						<span class="font-italic"> Linux, Mac OS, Windows</span>
+					</div>
+				</div>
 
-                    </div>
-               </div>
-     </section>
+				<h3 class="mb-3 mt-5" data-aos="fade-up" data-aos-delay="590">Awards & Acheivement</h3>
+				<div class="row" data-aos="fade-up" data-aos-delay="500">
+					<ul style="list-style-type:square;">
+						<li><span class="font-italic"> Magna Cum Laude </span> distinction for academic excellence.
+						</li>
+						<li>Secured 4th position in the Innovation challenge-8 competition (Final year project
+							showcase).</li>
+						<li>75 % scholarship on tuition fees in recognition of excellent academic performances.</li>
+						<li>Secured the 9th position at eval.ai object detection in wild competition.</li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div> -->
+			</div>
+	</section>
 
 
-     <!-- CLASS -->
-     <section class="class section" id="class">
-<!--                <div class="row container">
+	<!-- CLASS -->
+	<section class="class section" id="class">
+		<!--                <div class="row container">
                     <div class="row">
 			   <div class="col-lg-12 col-12 text-center mb-5">
 
@@ -342,332 +504,438 @@ https://www.tooplate.com/view/2119-gymso-fitness
 			   
                     </div>
                </div> -->
-	     
-	     <div class="container text-center my-3">
-		    <h3 class="mb-3" data-aos="fade-up" data-aos-delay="200">Courses & Certificates</h3>
-		    <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-			<div class="carousel-inner w-100" role="listbox">
-			    <div class="carousel-item row no-gutters active">
-				<div class="col-4 float-left"><img class="img-fluid" src="images/courses/GoogleProjectManagementCertificate_Badge20221023-46-i4b04v-1.jpg"></div>
-				<div class="col-4 float-left"><img class="img-fluid" src="images/courses/agile_pm-1.jpg"></div>
-				<div class="col-4 float-left"><img class="img-fluid" src="images/courses/aws_s3_basics-1.jpg"></div>
-<!-- 				<div class="col-3 float-left"><img class="img-fluid" src="http://via.placeholder.com/350x280/111/fff?text=4"></div> -->
-			    </div>
-			    <div class="carousel-item row no-gutters">
-				<div class="col-4 float-left"><img class="img-fluid" src="images/courses/aws_serverless-1.jpg"></div>
-				<div class="col-4 float-left"><img class="img-fluid" src="images/courses/foundation_of_pm-1.jpg"></div>
-				 <div class="col-4 float-left"><img class="img-fluid" src="images/courses/machine_learning-1.jpg"></div>
-<!-- 				<div class="col-3 float-left"><img class="img-fluid" src="http://via.placeholder.com/350x280/333/fff?text=7"></div>
+
+		<div class="container text-center my-3">
+			<h3 class="mb-3" data-aos="fade-up" data-aos-delay="200">Courses & Certificates</h3>
+			<div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+				<div class="carousel-inner w-100" role="listbox">
+					<div class="carousel-item row no-gutters active">
+						<div class="col-4 float-left"><img class="img-fluid"
+								src="images/courses/GoogleProjectManagementCertificate_Badge20221023-46-i4b04v-1.jpg">
+						</div>
+						<div class="col-4 float-left"><img class="img-fluid" src="images/courses/agile_pm-1.jpg"></div>
+						<div class="col-4 float-left"><img class="img-fluid" src="images/courses/aws_s3_basics-1.jpg">
+						</div>
+						<!-- 				<div class="col-3 float-left"><img class="img-fluid" src="http://via.placeholder.com/350x280/111/fff?text=4"></div> -->
+					</div>
+					<div class="carousel-item row no-gutters">
+						<div class="col-4 float-left"><img class="img-fluid" src="images/courses/aws_serverless-1.jpg">
+						</div>
+						<div class="col-4 float-left"><img class="img-fluid"
+								src="images/courses/foundation_of_pm-1.jpg"></div>
+						<div class="col-4 float-left"><img class="img-fluid"
+								src="images/courses/machine_learning-1.jpg"></div>
+						<!-- 				<div class="col-3 float-left"><img class="img-fluid" src="http://via.placeholder.com/350x280/333/fff?text=7"></div>
 				<div class="col-3 float-left"><img class="img-fluid" src="http://via.placeholder.com/350x280/bbb?text=8"></div> -->
-			    </div>
-			     <div class="carousel-item row no-gutters">
-				<div class="col-4 float-left"><img class="img-fluid" src="images/courses/pmp_capstone-1.jpg"></div>
- 				<div class="col-4 float-left"><img class="img-fluid" src="images/courses/pmp_specialization-1.jpg"></div>
-				 <div class="col-4 float-left"><img class="img-fluid" src="images/courses/project_execution-1.jpg"></div> 
-<!-- 				<div class="col-3 float-left"><img class="img-fluid" src="http://via.placeholder.com/350x280/333/fff?text=7"></div>
+					</div>
+					<div class="carousel-item row no-gutters">
+						<div class="col-4 float-left"><img class="img-fluid" src="images/courses/pmp_capstone-1.jpg">
+						</div>
+						<div class="col-4 float-left"><img class="img-fluid"
+								src="images/courses/pmp_specialization-1.jpg"></div>
+						<div class="col-4 float-left"><img class="img-fluid"
+								src="images/courses/project_execution-1.jpg"></div>
+						<!-- 				<div class="col-3 float-left"><img class="img-fluid" src="http://via.placeholder.com/350x280/333/fff?text=7"></div>
 				<div class="col-3 float-left"><img class="img-fluid" src="http://via.placeholder.com/350x280/bbb?text=8"></div> -->
-			    </div>
-			    <div class="carousel-item row no-gutters">
-				<div class="col-4 float-left"><img class="img-fluid" src="images/courses/project_initiation-1.jpg"></div>
- 				<div class="col-4 float-left"><img class="img-fluid" src="images/courses/software_development_process_methodology-1.jpg"></div>
-				 <div class="col-4 float-left"><img class="img-fluid" src="images/courses/python_application_aws-1.jpg"></div> 
-<!-- 				<div class="col-3 float-left"><img class="img-fluid" src="http://via.placeholder.com/350x280/333/fff?text=7"></div>
+					</div>
+					<div class="carousel-item row no-gutters">
+						<div class="col-4 float-left"><img class="img-fluid"
+								src="images/courses/project_initiation-1.jpg"></div>
+						<div class="col-4 float-left"><img class="img-fluid"
+								src="images/courses/software_development_process_methodology-1.jpg"></div>
+						<div class="col-4 float-left"><img class="img-fluid"
+								src="images/courses/python_application_aws-1.jpg"></div>
+						<!-- 				<div class="col-3 float-left"><img class="img-fluid" src="http://via.placeholder.com/350x280/333/fff?text=7"></div>
 				<div class="col-3 float-left"><img class="img-fluid" src="http://via.placeholder.com/350x280/bbb?text=8"></div> -->
-			    </div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+					<span style="color:black;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+					<span style="color:black;" class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
-			<a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
-			    <span style="color:black;" class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
-			    <span style="color:black;"  class="carousel-control-next-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			</a>
-		    </div>
 		</div>
-	     
-     </section>
+
+	</section>
 
 
-     <!-- SCHEDULE -->
-     <section class="schedule section" id="schedule">
-               <div class="container">
-                    <div class="row">
+	<!-- SCHEDULE -->
+	<section class="schedule section" id="schedule">
+		<div class="container">
+			<div class="row">
 
-                            <div class="col-lg-12 col-12 text-center">
+				<div class="col-lg-12 col-12 text-center">
 
-                                <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">Industry Experience</h2>
-                             </div>
+					<h2 class="text-white" data-aos="fade-up" data-aos-delay="200">Industry Experience</h2>
+				</div>
 
-                             <div class="col-lg-12 py-5 col-md-12 col-12">
-				 <p data-aos="fade-up" data-aos-delay="600" style="color:#b9b6b6;">
-					<span class="font-weight-bold" style="color:white;"> Software Engineer </span> <br>
-					<span class="font-italic"> Strativ AB, Stockhom County, Sweeden</span> <br>
-					<span class=""> February 2022 - Present </span> <br>
+				<div class="col-lg-12 py-5 col-md-12 col-12">
+					<p data-aos="fade-up" data-aos-delay="600" style="color:#b9b6b6;">
+						<span class="font-weight-bold" style="color:white;"> Software Engineer </span> <br>
+						<span class="font-italic"> Strativ AB, Stockhom County, Sweeden</span> <br>
+						<span class=""> February 2022 - Present </span> <br>
 					<p data-aos="fade-up" data-aos-delay="700" style="text-align: justify;color:#b9b6b6;">
-						In strativ, we develop different health care provider software as a technical partner of Docty and Kry. 
-						From the beginning I was responsible for multiple projects like Vaccination, Docty Check 
-						(Software to provide antibiotics for lower unirary tract infection). Here is my key responsibilities in Strativ.
-				        </p>
-					<ul  data-aos="fade-up" data-aos-delay="700" style="list-style-type:square;text-align: justify;color:#b9b6b6;">
-						  <li> Work as a project responsible and manage the project life cycle.</li>
-						  <li> Analyze and specify client requirements.</li>
-						  <li> Design solution pipelines and develop business logic.</li>
-						  <li> Work on data extraction from different sources and storing them to data warehouse and data lake.</li>
-						  <li> Design solution pipelines and develop business logic.</li>
-						  <li> Create visual representations of the useful information by transforming and analyzing data.</li>
-						  <li> Develop Rest APIs using Django Rest Framework (DRF).</li>
-						  <li> Maintain synchronization among different cross functional teams.</li>
-						  <li> Keep project deliverable sync with the deadline through maintaining communication with the clients and team members.</li> 
-					 </ul> 
- 				    <span data-aos="fade-up" data-aos-delay="700" style="color:#b9b6b6;" > <span class="font-weight-bold"> Tools/Technologies : </span> <span class="font-italic"> Python, Django, Django Rest Framework (DRF), AWS, Docker, PostgreSQL, Jira, Apache Airflow, Apache Spark, Pandas, Numpy </span></span>
-	
-				</p>
-			        <hr data-aos="fade-up" data-aos-delay="700" style="margin-top:5px;margin-bottom:0px; border:1px solid #c3a774">
-                                <p data-aos="fade-up" data-aos-delay="600" style="color:#b9b6b6;">
-					<span class="font-weight-bold" style="color:white;"> Software Engineer </span> <br>
-					<span class="font-italic"> Bdtask Ltd. Khilkhet, Dhaka. </span> <br>
-					<span class=""> February 2021 - January 2022 </span> <br>
+						In strativ, we develop different health care provider software as a technical partner of Docty
+						and Kry.
+						From the beginning I was responsible for multiple projects like Vaccination, Docty Check
+						(Software to provide antibiotics for lower unirary tract infection). Here is my key
+						responsibilities in Strativ.
+					</p>
+					<ul data-aos="fade-up" data-aos-delay="700"
+						style="list-style-type:square;text-align: justify;color:#b9b6b6;">
+						<li> Work as a project responsible and manage the project life cycle.</li>
+						<li> Analyze and specify client requirements.</li>
+						<li> Design solution pipelines and develop business logic.</li>
+						<li> Work on data extraction from different sources and storing them to data warehouse and data
+							lake.</li>
+						<li> Design solution pipelines and develop business logic.</li>
+						<li> Create visual representations of the useful information by transforming and analyzing data.
+						</li>
+						<li> Develop Rest APIs using Django Rest Framework (DRF).</li>
+						<li> Maintain synchronization among different cross functional teams.</li>
+						<li> Keep project deliverable sync with the deadline through maintaining communication with the
+							clients and team members.</li>
+					</ul>
+					<span data-aos="fade-up" data-aos-delay="700" style="color:#b9b6b6;"> <span
+							class="font-weight-bold"> Tools/Technologies : </span> <span class="font-italic"> Python,
+							Django, Django Rest Framework (DRF), AWS, Docker, PostgreSQL, Jira, Apache Airflow, Apache
+							Spark, Pandas, Numpy </span></span>
+
+					</p>
+					<hr data-aos="fade-up" data-aos-delay="700"
+						style="margin-top:5px;margin-bottom:0px; border:1px solid #c3a774">
+					<p data-aos="fade-up" data-aos-delay="600" style="color:#b9b6b6;">
+						<span class="font-weight-bold" style="color:white;"> Software Engineer </span> <br>
+						<span class="font-italic"> Bdtask Ltd. Khilkhet, Dhaka. </span> <br>
+						<span class=""> February 2021 - January 2022 </span> <br>
 					<p data-aos="fade-up" data-aos-delay="700" style="text-align: justify;color:#b9b6b6;">
-						Since the time period of my joining at Bdtask, I have been playing key responsibilities in different projects. At present, 
-						I am working on a 𝐎𝐓𝐀 𝐛𝐚𝐬𝐞𝐝 𝐩𝐫𝐨𝐣𝐞𝐜𝐭 for 𝐀𝐢𝐫 𝐓𝐫𝐚𝐯𝐞𝐥𝐢𝐧𝐠 using two of the world's leading 𝐠𝐥𝐨𝐛𝐚𝐥 𝐝𝐢𝐬𝐭𝐫𝐢𝐛𝐮𝐭𝐞𝐝 𝐬𝐲𝐬𝐭𝐞𝐦𝐬 (𝐆𝐃𝐒) named 𝐒𝐚𝐛𝐫𝐞 and 𝐆𝐚𝐥𝐢𝐥𝐞𝐨.
+						Since the time period of my joining at Bdtask, I have been playing key responsibilities in
+						different projects. At present,
+						I am working on a 𝐎𝐓𝐀 𝐛𝐚𝐬𝐞𝐝 𝐩𝐫𝐨𝐣𝐞𝐜𝐭 for 𝐀𝐢𝐫 𝐓𝐫𝐚𝐯𝐞𝐥𝐢𝐧𝐠 using two of
+						the world's leading 𝐠𝐥𝐨𝐛𝐚𝐥 𝐝𝐢𝐬𝐭𝐫𝐢𝐛𝐮𝐭𝐞𝐝 𝐬𝐲𝐬𝐭𝐞𝐦𝐬 (𝐆𝐃𝐒) named 𝐒𝐚𝐛𝐫𝐞
+						and 𝐆𝐚𝐥𝐢𝐥𝐞𝐨.
 						Followings domain I have contributed as a software engineer of Bdtask :
-				        </p>
-					<ul  data-aos="fade-up" data-aos-delay="700" style="list-style-type:square;text-align: justify;color:#b9b6b6;">
-						  <li> Interact with the GDS to parse data through both REST and SOAP Apis.</li>
-						  <li> Developed the Air ticketing solution system for both B2C and B2B.</li>
-						  <li> Worked on designing solution pipeline and database.</li>
-						  <li> Implemented business logic to develop API driven web-based application.</li>
-						  <li> Developed server-less REST Apis using AWS-Lambda to interact with the client-side.</li>
-						  <li> Contributed to host the solution in AWS environment using Docker and other AWS micro services like EC2,S3,Route 53 etc.</li>
-					    </ul>
-				    <span data-aos="fade-up" data-aos-delay="700" style="color:#b9b6b6;" > <span class="font-weight-bold"> Tools/Technologies : </span> <span class="font-italic"> Python, Django, GDS (Sabre,Galileo), AWS, AWS-Lambda, Docker, PostgreSQL </span></span>
-	
-				</p>
-			    <hr data-aos="fade-up" data-aos-delay="700" style="margin-top:5px;margin-bottom:0px; border:1px solid #c3a774">
-			    <hr data-aos="fade-up" data-aos-delay="700" style="margin-top:0px;margin-bottom:5px; border:1px solid #c3a774">
-			    	<p data-aos="fade-up" data-aos-delay="600" style="color:#b9b6b6;">
-					<span class="font-weight-bold" style="color:white;"> Software Engineer </span> <br>
-					<span class="font-italic"> Intense Ltd. Mogbazar, Dhaka. </span> <br>
-					<span class=""> July 2020 - January 2021 </span> <br>
-					<p data-aos="fade-up" data-aos-delay="700" style="text-align: justify;color:#b9b6b6;">
-						During the employment period I have contributed in multiple projects to develop large scalable and robust software solution. 
-						Followings are the key responsibilities I have played as a back-end software engineer at Intense Ltd.
-				        </p>
-					<ul  data-aos="fade-up" data-aos-delay="700" style="list-style-type:square;text-align: justify;color:#b9b6b6;">
-						  <li> Contributed to develop E-Commerce solution having inventory and POS integrated system.</li>
-						  <li> Worked with <span class="font-italic"> Nagad </span> and <span class="font-italic"> Bkash </span> payment APIs to build a large scale-able and sustainable secured payment site called <a href="https://pay.instapay.com.bd" style="color:violet;">Instapay</a>.</li>
-						  <li> Vastly contributed to design solution pipelines to database including developing business logic and API documentation.</li>
-						  <li> Very often contributed to develop front-end features using Vue Js.</li>
-					    </ul>
-				    <span data-aos="fade-up" data-aos-delay="700" style="color:#b9b6b6;" > <span class="font-weight-bold"> Tools/Technologies : </span> <span class="font-italic"> Django, PostgreSQL, MySQL, Vue.Js, REST Api </span></span>
-	
-				</p>
-                             </div>
-                    </div>
-		   <div class="row">
+					</p>
+					<ul data-aos="fade-up" data-aos-delay="700"
+						style="list-style-type:square;text-align: justify;color:#b9b6b6;">
+						<li> Interact with the GDS to parse data through both REST and SOAP Apis.</li>
+						<li> Developed the Air ticketing solution system for both B2C and B2B.</li>
+						<li> Worked on designing solution pipeline and database.</li>
+						<li> Implemented business logic to develop API driven web-based application.</li>
+						<li> Developed server-less REST Apis using AWS-Lambda to interact with the client-side.</li>
+						<li> Contributed to host the solution in AWS environment using Docker and other AWS micro
+							services like EC2,S3,Route 53 etc.</li>
+					</ul>
+					<span data-aos="fade-up" data-aos-delay="700" style="color:#b9b6b6;"> <span
+							class="font-weight-bold"> Tools/Technologies : </span> <span class="font-italic"> Python,
+							Django, GDS (Sabre,Galileo), AWS, AWS-Lambda, Docker, PostgreSQL </span></span>
 
-                            <div class="col-lg-12 col-12 text-center">
-
-                                <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">Academic Experience</h2>
-                             </div>
-
-                             <div class="col-lg-12 py-5 col-md-12 col-12">
-                                <p data-aos="fade-up" data-aos-delay="600" style="color:#b9b6b6;">
-					<span class="font-weight-bold" style="color:white;"> Lab Instructor </span> <br>
-					<span class="font-italic"> Department of Electrical & Computer Engineering, NSU, Dhaka. </span> <br>
-					<span class=""> January 2020 - June 2020 </span> <br>
+					</p>
+					<hr data-aos="fade-up" data-aos-delay="700"
+						style="margin-top:5px;margin-bottom:0px; border:1px solid #c3a774">
+					<hr data-aos="fade-up" data-aos-delay="700"
+						style="margin-top:0px;margin-bottom:5px; border:1px solid #c3a774">
+					<p data-aos="fade-up" data-aos-delay="600" style="color:#b9b6b6;">
+						<span class="font-weight-bold" style="color:white;"> Software Engineer </span> <br>
+						<span class="font-italic"> Intense Ltd. Mogbazar, Dhaka. </span> <br>
+						<span class=""> July 2020 - January 2021 </span> <br>
 					<p data-aos="fade-up" data-aos-delay="700" style="text-align: justify;color:#b9b6b6;">
-						I was appointed as a 𝐚 𝐋𝐚𝐛 𝐈𝐧𝐬𝐭𝐫𝐮𝐜𝐭𝐨𝐫 at the 𝐃𝐞𝐩𝐚𝐫𝐭𝐦𝐞𝐧𝐭 𝐨𝐟 𝐄𝐥𝐞𝐜𝐭𝐫𝐢𝐜𝐚𝐥 𝐚𝐧𝐝 𝐂𝐨𝐦𝐩𝐮𝐭𝐞𝐫 𝐒𝐜𝐢𝐞𝐧𝐜𝐞, 𝐍𝐨𝐫𝐭𝐡 𝐒𝐨𝐮𝐭𝐡 𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲 (𝐍𝐒𝐔), Dhaka, Bangladesh
-						for the 𝐒𝐩𝐫𝐢𝐧𝐠 𝐬𝐞𝐬𝐬𝐢𝐨𝐧 2021. As an Instructor I performed the following tasks as my key responsibilities :
-				        </p>
-					<ul  data-aos="fade-up" data-aos-delay="700" style="list-style-type:square;text-align: justify;color:#b9b6b6;">
-						  <li> Conducted Data Structures and Algorithm lab course (CSE-225L).</li>
-						  <li> Conducted Java lab (CSE-215L)course and worked on OOP concept.</li>
-						  <li> Counselled the students during the office hours.</li>
-						  <li> Proctoring in exam hall and grading the exam scripts.</li>
-						  <li> Solved different real time problems and <a href="https://github.com/kmfaizullah/Data-Structure-and-Algorithms" style="color:violet;"> algorithms </a> using C++, Java and Python.</li>
-					    </ul>
-				     </p>
-			    <hr data-aos="fade-up" data-aos-delay="700" style="margin-top:5px;margin-bottom:0px; border:1px solid #c3a774">
-			    <hr data-aos="fade-up" data-aos-delay="700" style="margin-top:0px;margin-bottom:5px; border:1px solid #c3a774">
-			    	<p data-aos="fade-up" data-aos-delay="600" style="color:#b9b6b6;">
-					<span class="font-weight-bold" style="color:white;"> Undergraduate Teaching Assistant (UTA) </span> <br>
-					<span class="font-italic"> Department of Mathematics & Physics, NSU, Dhaka. </span> <br>
-					<span class=""> January 2019 - September 2019 </span> <br>
+						During the employment period I have contributed in multiple projects to develop large scalable
+						and robust software solution.
+						Followings are the key responsibilities I have played as a back-end software engineer at Intense
+						Ltd.
+					</p>
+					<ul data-aos="fade-up" data-aos-delay="700"
+						style="list-style-type:square;text-align: justify;color:#b9b6b6;">
+						<li> Contributed to develop E-Commerce solution having inventory and POS integrated system.</li>
+						<li> Worked with <span class="font-italic"> Nagad </span> and <span class="font-italic"> Bkash
+							</span> payment APIs to build a large scale-able and sustainable secured payment site called
+							<a href="https://pay.instapay.com.bd" style="color:violet;">Instapay</a>.
+						</li>
+						<li> Vastly contributed to design solution pipelines to database including developing business
+							logic and API documentation.</li>
+						<li> Very often contributed to develop front-end features using Vue Js.</li>
+					</ul>
+					<span data-aos="fade-up" data-aos-delay="700" style="color:#b9b6b6;"> <span
+							class="font-weight-bold"> Tools/Technologies : </span> <span class="font-italic"> Django,
+							PostgreSQL, MySQL, Vue.Js, REST Api </span></span>
+
+					</p>
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-lg-12 col-12 text-center">
+
+					<h2 class="text-white" data-aos="fade-up" data-aos-delay="200">Academic Experience</h2>
+				</div>
+
+				<div class="col-lg-12 py-5 col-md-12 col-12">
+					<p data-aos="fade-up" data-aos-delay="600" style="color:#b9b6b6;">
+						<span class="font-weight-bold" style="color:white;"> Lab Instructor </span> <br>
+						<span class="font-italic"> Department of Electrical & Computer Engineering, NSU, Dhaka. </span>
+						<br>
+						<span class=""> January 2020 - June 2020 </span> <br>
 					<p data-aos="fade-up" data-aos-delay="700" style="text-align: justify;color:#b9b6b6;">
-						I was appointed as a 𝐔𝐧𝐝𝐞𝐫𝐠𝐫𝐚𝐝𝐮𝐚𝐭𝐞 𝐓𝐞𝐚𝐜𝐡𝐢𝐧𝐠 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 (𝐔𝐓𝐀) at 𝐃𝐞𝐩𝐚𝐫𝐭𝐦𝐞𝐧𝐭 𝐨𝐟 𝐌𝐚𝐭𝐡𝐞𝐦𝐚𝐭𝐢𝐜𝐬 & 𝐏𝐡𝐲𝐬𝐢𝐜𝐬, 𝐍𝐨𝐫𝐭𝐡 𝐒𝐨𝐮𝐭𝐡 𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲 
-						for the course 𝐒𝐭𝐚𝐭𝐢𝐬𝐭𝐢𝐜𝐬 𝐚𝐧𝐝 𝐏𝐫𝐨𝐛𝐚𝐛𝐢𝐥𝐢𝐭𝐲 (𝐌𝐀𝐓-361) under the supervision of 𝐃𝐫. 𝐏𝐚𝐫𝐭𝐡𝐚 𝐏𝐫𝐚𝐭𝐢𝐦 𝐃𝐞𝐲 and 𝐃𝐫. 𝐈𝐬𝐫𝐚𝐭 𝐑𝐚𝐲𝐡𝐚𝐧. 
+						I was appointed as a 𝐚 𝐋𝐚𝐛 𝐈𝐧𝐬𝐭𝐫𝐮𝐜𝐭𝐨𝐫 at the 𝐃𝐞𝐩𝐚𝐫𝐭𝐦𝐞𝐧𝐭 𝐨𝐟
+						𝐄𝐥𝐞𝐜𝐭𝐫𝐢𝐜𝐚𝐥 𝐚𝐧𝐝 𝐂𝐨𝐦𝐩𝐮𝐭𝐞𝐫 𝐒𝐜𝐢𝐞𝐧𝐜𝐞, 𝐍𝐨𝐫𝐭𝐡 𝐒𝐨𝐮𝐭𝐡
+						𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲 (𝐍𝐒𝐔), Dhaka, Bangladesh
+						for the 𝐒𝐩𝐫𝐢𝐧𝐠 𝐬𝐞𝐬𝐬𝐢𝐨𝐧 2021. As an Instructor I performed the following tasks as my
+						key responsibilities :
+					</p>
+					<ul data-aos="fade-up" data-aos-delay="700"
+						style="list-style-type:square;text-align: justify;color:#b9b6b6;">
+						<li> Conducted Data Structures and Algorithm lab course (CSE-225L).</li>
+						<li> Conducted Java lab (CSE-215L)course and worked on OOP concept.</li>
+						<li> Counselled the students during the office hours.</li>
+						<li> Proctoring in exam hall and grading the exam scripts.</li>
+						<li> Solved different real time problems and <a
+								href="https://github.com/kmfaizullah/Data-Structure-and-Algorithms"
+								style="color:violet;"> algorithms </a> using C++, Java and Python.</li>
+					</ul>
+					</p>
+					<hr data-aos="fade-up" data-aos-delay="700"
+						style="margin-top:5px;margin-bottom:0px; border:1px solid #c3a774">
+					<hr data-aos="fade-up" data-aos-delay="700"
+						style="margin-top:0px;margin-bottom:5px; border:1px solid #c3a774">
+					<p data-aos="fade-up" data-aos-delay="600" style="color:#b9b6b6;">
+						<span class="font-weight-bold" style="color:white;"> Undergraduate Teaching Assistant (UTA)
+						</span> <br>
+						<span class="font-italic"> Department of Mathematics & Physics, NSU, Dhaka. </span> <br>
+						<span class=""> January 2019 - September 2019 </span> <br>
+					<p data-aos="fade-up" data-aos-delay="700" style="text-align: justify;color:#b9b6b6;">
+						I was appointed as a 𝐔𝐧𝐝𝐞𝐫𝐠𝐫𝐚𝐝𝐮𝐚𝐭𝐞 𝐓𝐞𝐚𝐜𝐡𝐢𝐧𝐠 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 (𝐔𝐓𝐀) at
+						𝐃𝐞𝐩𝐚𝐫𝐭𝐦𝐞𝐧𝐭 𝐨𝐟 𝐌𝐚𝐭𝐡𝐞𝐦𝐚𝐭𝐢𝐜𝐬 & 𝐏𝐡𝐲𝐬𝐢𝐜𝐬, 𝐍𝐨𝐫𝐭𝐡 𝐒𝐨𝐮𝐭𝐡
+						𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲
+						for the course 𝐒𝐭𝐚𝐭𝐢𝐬𝐭𝐢𝐜𝐬 𝐚𝐧𝐝 𝐏𝐫𝐨𝐛𝐚𝐛𝐢𝐥𝐢𝐭𝐲 (𝐌𝐀𝐓-361) under the
+						supervision of 𝐃𝐫. 𝐏𝐚𝐫𝐭𝐡𝐚 𝐏𝐫𝐚𝐭𝐢𝐦 𝐃𝐞𝐲 and 𝐃𝐫. 𝐈𝐬𝐫𝐚𝐭 𝐑𝐚𝐲𝐡𝐚𝐧.
 						As a UTA I have performed the following tasks :
-				        </p>
-					<ul  data-aos="fade-up" data-aos-delay="700" style="list-style-type:square;text-align: justify;color:#b9b6b6;">
-						  <li> Assisted Statistics and Probability (Mat -361) subject.</li>
-						  <li> Prepared course materials.</li>
-						  <li> Performed proctoring in exam halls.</li>
-						  <li> Counseled students during office hours.</li>
-						  <li> Conducted tutorial session for the help seeking students.</li>
-						  <li> Graded on quiz, assignment and homework scripts.</li>
+					</p>
+					<ul data-aos="fade-up" data-aos-delay="700"
+						style="list-style-type:square;text-align: justify;color:#b9b6b6;">
+						<li> Assisted Statistics and Probability (Mat -361) subject.</li>
+						<li> Prepared course materials.</li>
+						<li> Performed proctoring in exam halls.</li>
+						<li> Counseled students during office hours.</li>
+						<li> Conducted tutorial session for the help seeking students.</li>
+						<li> Graded on quiz, assignment and homework scripts.</li>
 					</ul>
-				</p>
-                             </div>
-                    </div>
+					</p>
+				</div>
+			</div>
 
-		   <div class="row">
+			<div class="row">
 
-                            <div class="col-lg-12 col-12 text-center">
+				<div class="col-lg-12 col-12 text-center">
 
-                                <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">Research Experience</h2>
-                             </div>
+					<h2 class="text-white" data-aos="fade-up" data-aos-delay="200">Research Experience</h2>
+				</div>
 
-                             <div class="col-lg-12 py-5 col-md-12 col-12">
-                                <p data-aos="fade-up" data-aos-delay="600" style="color:#b9b6b6;">
-					<span class="font-weight-bold" style="color:white;"> Research Assistant (RA) </span> <br>
-					<span class="font-italic"> Tnr Lab, North South University, Dhaka. </span> <br>
-					<span class=""> February 2020 - June 2020 </span> <br>
+				<div class="col-lg-12 py-5 col-md-12 col-12">
+					<p data-aos="fade-up" data-aos-delay="600" style="color:#b9b6b6;">
+						<span class="font-weight-bold" style="color:white;"> Research Assistant (RA) </span> <br>
+						<span class="font-italic"> Tnr Lab, North South University, Dhaka. </span> <br>
+						<span class=""> February 2020 - June 2020 </span> <br>
 					<p data-aos="fade-up" data-aos-delay="700" style="text-align: justify;color:#b9b6b6;">
-						I have worked as a 𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 (𝐑𝐀) in 𝐓𝐍𝐑 𝐋𝐚𝐛,𝐍𝐨𝐫𝐭𝐡 𝐒𝐨𝐮𝐭𝐡 𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲 (𝐍𝐒𝐔), Dhaka, Bangladesh under the supervision 
-						of 𝐃𝐫. 𝐓𝐚𝐧𝐳𝐢𝐥𝐮𝐫 𝐑𝐚𝐡𝐦𝐚𝐧. My cumulative research findings has been published in an 𝐢𝐧𝐭𝐞𝐫𝐧𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐉𝐨𝐮𝐫𝐧𝐚𝐥 and an 
-						i𝐢𝐧𝐭𝐞𝐫𝐧𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐜𝐨𝐧𝐟𝐞𝐫𝐞𝐧𝐜𝐞 𝐩𝐫𝐨𝐜𝐞𝐞𝐝𝐢𝐧𝐠𝐬. Following domain I have worked in the research lab :
-				        </p>
-				     	
-					<ul  data-aos="fade-up" data-aos-delay="700" style="list-style-type:square;text-align: justify;color:#b9b6b6;">
-						  <li> Extracted feature vector of the medical images/videos using computer vision techniques.</li>
-						  <li> Developed different solution pipelines and models (mostly classification, regression and detection) to solve the real life problems.</li>
-						  <li> Miniature the model using different model pruning techniques.</li>
-						  <li> Developed the service prototype by integrating the trained model.</li>
+						I have worked as a 𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 (𝐑𝐀) in 𝐓𝐍𝐑 𝐋𝐚𝐛,𝐍𝐨𝐫𝐭𝐡
+						𝐒𝐨𝐮𝐭𝐡 𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲 (𝐍𝐒𝐔), Dhaka, Bangladesh under the supervision
+						of 𝐃𝐫. 𝐓𝐚𝐧𝐳𝐢𝐥𝐮𝐫 𝐑𝐚𝐡𝐦𝐚𝐧. My cumulative research findings has been published in an
+						𝐢𝐧𝐭𝐞𝐫𝐧𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐉𝐨𝐮𝐫𝐧𝐚𝐥 and an
+						i𝐢𝐧𝐭𝐞𝐫𝐧𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐜𝐨𝐧𝐟𝐞𝐫𝐞𝐧𝐜𝐞 𝐩𝐫𝐨𝐜𝐞𝐞𝐝𝐢𝐧𝐠𝐬. Following domain I have
+						worked in the research lab :
+					</p>
+
+					<ul data-aos="fade-up" data-aos-delay="700"
+						style="list-style-type:square;text-align: justify;color:#b9b6b6;">
+						<li> Extracted feature vector of the medical images/videos using computer vision techniques.
+						</li>
+						<li> Developed different solution pipelines and models (mostly classification, regression and
+							detection) to solve the real life problems.</li>
+						<li> Miniature the model using different model pruning techniques.</li>
+						<li> Developed the service prototype by integrating the trained model.</li>
 					</ul>
-				     <span data-aos="fade-up" data-aos-delay="700" style="color:#b9b6b6;" > <span class="font-weight-bold"> Tools/Technologies : </span> <span class="font-italic"> Machine Leaning Algorithms, Deep Learning Algorithms, Python, Flask, TensorFlow, OpenCV, Scikit Learn, Matplotlib, Pandas and Numpy. </span></span>
-				     </p>
-			    <hr data-aos="fade-up" data-aos-delay="700" style="margin-top:5px;margin-bottom:0px; border:1px solid #c3a774">
-			    <hr data-aos="fade-up" data-aos-delay="700" style="margin-top:0px;margin-bottom:5px; border:1px solid #c3a774">
-			   
-			    	<p data-aos="fade-up" data-aos-delay="600" style="color:#b9b6b6;">
-					<span class="font-weight-bold" style="color:white;"> Research Engineer </span> <br>
-					<span class="font-italic"> Apurba Technologies Inc. based in Sunnyvale, California, USA </span> <br>
-					<span class=""> October 2019 - December 2019 </span> <br>
+					<span data-aos="fade-up" data-aos-delay="700" style="color:#b9b6b6;"> <span
+							class="font-weight-bold"> Tools/Technologies : </span> <span class="font-italic"> Machine
+							Leaning Algorithms, Deep Learning Algorithms, Python, Flask, TensorFlow, OpenCV, Scikit
+							Learn, Matplotlib, Pandas and Numpy. </span></span>
+					</p>
+					<hr data-aos="fade-up" data-aos-delay="700"
+						style="margin-top:5px;margin-bottom:0px; border:1px solid #c3a774">
+					<hr data-aos="fade-up" data-aos-delay="700"
+						style="margin-top:0px;margin-bottom:5px; border:1px solid #c3a774">
+
+					<p data-aos="fade-up" data-aos-delay="600" style="color:#b9b6b6;">
+						<span class="font-weight-bold" style="color:white;"> Research Engineer </span> <br>
+						<span class="font-italic"> Apurba Technologies Inc. based in Sunnyvale, California, USA </span>
+						<br>
+						<span class=""> October 2019 - December 2019 </span> <br>
 					<p data-aos="fade-up" data-aos-delay="700" style="text-align: justify;color:#b9b6b6;">
-						I have worked as a 𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫 in the collaboration between 𝐍𝐨𝐫𝐭𝐡 𝐒𝐨𝐮𝐭𝐡 𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲 (𝐍𝐒𝐔), 𝐃𝐡𝐚𝐤𝐚, 𝐁𝐚𝐧𝐠𝐥𝐚𝐝𝐞𝐬𝐡 and 
-						𝐀𝐩𝐮𝐫𝐛𝐚 𝐓𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞𝐬 𝐈𝐧𝐜. 𝐛𝐚𝐬𝐞𝐝 𝐨𝐧 𝐒𝐮𝐧𝐧𝐲𝐯𝐚𝐥𝐞, 𝐂𝐚𝐥𝐢𝐟𝐨𝐫𝐧𝐢𝐚, 𝐔𝐒𝐀 under the supervision of 𝐃𝐫. 𝐍𝐚𝐛𝐞𝐞𝐥 𝐌𝐨𝐡𝐚𝐦𝐦𝐞𝐝. I am also the 
-						𝐟𝐨𝐮𝐧𝐝𝐞𝐫 𝐦𝐞𝐦𝐛𝐞𝐫 of 𝐀𝐩𝐮𝐫𝐛𝐚 𝐋𝐚𝐛 at North South University. Our cumulative research findings has been published in an 𝐢𝐧𝐭𝐞𝐫𝐧𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐜𝐨𝐧𝐟𝐞𝐫𝐞𝐧𝐜𝐞 𝐩𝐫𝐨𝐜𝐞𝐞𝐝𝐢𝐧𝐠𝐬.
+						I have worked as a 𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫 in the collaboration between 𝐍𝐨𝐫𝐭𝐡
+						𝐒𝐨𝐮𝐭𝐡 𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲 (𝐍𝐒𝐔), 𝐃𝐡𝐚𝐤𝐚, 𝐁𝐚𝐧𝐠𝐥𝐚𝐝𝐞𝐬𝐡 and
+						𝐀𝐩𝐮𝐫𝐛𝐚 𝐓𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞𝐬 𝐈𝐧𝐜. 𝐛𝐚𝐬𝐞𝐝 𝐨𝐧 𝐒𝐮𝐧𝐧𝐲𝐯𝐚𝐥𝐞,
+						𝐂𝐚𝐥𝐢𝐟𝐨𝐫𝐧𝐢𝐚, 𝐔𝐒𝐀 under the supervision of 𝐃𝐫. 𝐍𝐚𝐛𝐞𝐞𝐥 𝐌𝐨𝐡𝐚𝐦𝐦𝐞𝐝. I am
+						also the
+						𝐟𝐨𝐮𝐧𝐝𝐞𝐫 𝐦𝐞𝐦𝐛𝐞𝐫 of 𝐀𝐩𝐮𝐫𝐛𝐚 𝐋𝐚𝐛 at North South University. Our cumulative
+						research findings has been published in an 𝐢𝐧𝐭𝐞𝐫𝐧𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐜𝐨𝐧𝐟𝐞𝐫𝐞𝐧𝐜𝐞
+						𝐩𝐫𝐨𝐜𝐞𝐞𝐝𝐢𝐧𝐠𝐬.
 						As one of the founder member of Apurba Lab I have performed the following task :
-				        </p>
-					<ul  data-aos="fade-up" data-aos-delay="700" style="list-style-type:square;text-align: justify;color:#b9b6b6;">
-						  <li> Implemented different statistical algorithms such as 𝑻𝑭-𝑰𝑫𝑭, 𝑲𝑾𝑰𝑪, 𝑵-𝑮𝒓𝒂𝒎, 𝑪𝒐𝒖𝒏𝒕 𝑽𝒆𝒄𝒕𝒐𝒓, 𝑪𝒐-𝒐𝒄𝒄𝒖𝒓𝒓𝒆𝒏𝒄𝒆 𝒎𝒂𝒕𝒓𝒊𝒙 and their Rest Apis based services.</li>
-						  <li> Implemented 𝑭𝒖𝒍𝒍 𝑻𝒆𝒙𝒕 𝑺𝒆𝒂𝒓𝒄𝒉 𝒔𝒚𝒔𝒕𝒆𝒎 using 𝑬𝒍𝒂𝒔𝒕𝒊𝒄𝒔𝒆𝒂𝒓𝒄𝒉.</li>
-						  <li> Developed a wrapper to provide cumulative API of each services.</li>
+					</p>
+					<ul data-aos="fade-up" data-aos-delay="700"
+						style="list-style-type:square;text-align: justify;color:#b9b6b6;">
+						<li> Implemented different statistical algorithms such as 𝑻𝑭-𝑰𝑫𝑭, 𝑲𝑾𝑰𝑪, 𝑵-𝑮𝒓𝒂𝒎,
+							𝑪𝒐𝒖𝒏𝒕 𝑽𝒆𝒄𝒕𝒐𝒓, 𝑪𝒐-𝒐𝒄𝒄𝒖𝒓𝒓𝒆𝒏𝒄𝒆 𝒎𝒂𝒕𝒓𝒊𝒙 and their Rest Apis based
+							services.</li>
+						<li> Implemented 𝑭𝒖𝒍𝒍 𝑻𝒆𝒙𝒕 𝑺𝒆𝒂𝒓𝒄𝒉 𝒔𝒚𝒔𝒕𝒆𝒎 using 𝑬𝒍𝒂𝒔𝒕𝒊𝒄𝒔𝒆𝒂𝒓𝒄𝒉.
+						</li>
+						<li> Developed a wrapper to provide cumulative API of each services.</li>
 					</ul>
-			   		<span data-aos="fade-up" data-aos-delay="700" style="color:#b9b6b6;" > <span class="font-weight-bold"> Tools/Technologies : </span> <span class="font-italic"> Machine Leaning Algorithms, Deep Learning Algorithms, Python, Flask, TensorFlow, OpenCV, Scikit Learn, Matplotlib, Pandas and Numpy. </span></span>
-			   
-				</p>
-                             </div>
-                    </div>
-               </div>
-     </section>
+					<span data-aos="fade-up" data-aos-delay="700" style="color:#b9b6b6;"> <span
+							class="font-weight-bold"> Tools/Technologies : </span> <span class="font-italic"> Machine
+							Leaning Algorithms, Deep Learning Algorithms, Python, Flask, TensorFlow, OpenCV, Scikit
+							Learn, Matplotlib, Pandas and Numpy. </span></span>
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
-     <!-- CONTACT -->
-     <section class="contact section" id="publications" style="background: #f9f9f9;">
-          <div class="container">
-               <div class="row">
-		     <div class="col-lg-12 col-12 text-center mb-5">
-                          <h3 data-aos="fade-up" data-aos-delay="200">Publications</h3>
-                     </div>
+	<!-- CONTACT -->
+	<section class="contact section" id="publications" style="background: #f9f9f9;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-12 text-center mb-5">
+					<h3 data-aos="fade-up" data-aos-delay="200">Publications</h3>
+				</div>
 
-                    <div  data-aos="fade-up" data-aos-delay="500" class="ml-auto col-lg-12 col-md-12 col-12" style="text-align: justify;">
-                        <ul class="fa-ul">
-			  <li><span class="fa-li"><i class="fa fa-check-square" style="color:black"></i></span> <span class="font-weight-bold">Fuhad, K. M. F. </span>; Tuba, J. F.; Sarker, M. R. A.; Momen, S.; 
-			        Mohammed, N.; and Rahman, T. ‘<span class="font-italic font-weight-bold">Deep Learning based Automatic Malaria Parasite detection from Blood Smear and its Smartphone based Application </span>’,
-				  Diagnostics 2020, 10, 329. <a href="https://www.mdpi.com/2075-4418/10/5/329"> <i class="fa fa-external-link"></i></a></li>
-				
-			  <li class="mt-3"><span class="fa-li"><i class="fa fa-check-square" style="color:black"></i></span> Roy, k.; Hasan, M.; <span class="font-weight-bold">Fuhad, K. M. F. </span>; Mohammed, N.; Rabby, A. K. M. S.; Hasan, N.; Nahar, J. and
-				Rahman, F. ‘<span class="font-italic font-weight-bold">Bangla Part of Speech tagging using Contextual Embeddings and Oversampling Techniques </span>’,
-				Future Technologies Conference 2020 (FTC – 2020), Vancouver, Canada. <a href="https://link.springer.com/chapter/10.1007/978-3-030-63128-4_50"> <i class="fa fa-external-link"></i></a></li>
-				
-				
-			  <li class="mt-3"><span class="fa-li"><i class="fa fa-check-square" style="color:black"></i></span> <span class="font-weight-bold">Fuhad, K. M. F. </span>; Tuba, J. F.; Rahman, T.; and Mohammed, N. 
-			        ‘<span class="font-italic font-weight-bold">CNN Based Model for Malaria Diagnosis with Knowledge Distillation </span>’,
-				4th International Conference on digital signal processing-2020 (ICDSP’20), Chengdu, China,2020. <a href="https://dl.acm.org/doi/10.1145/3408127.3408159"> <i class="fa fa-external-link"></i></a></li>
-			
-			</ul>
-                    </div>
-               </div>
-          </div>
-     </section>
+				<div data-aos="fade-up" data-aos-delay="500" class="ml-auto col-lg-12 col-md-12 col-12"
+					style="text-align: justify;">
+					<ul class="fa-ul">
+						<li><span class="fa-li"><i class="fa fa-check-square" style="color:black"></i></span> <span
+								class="font-weight-bold">Fuhad, K. M. F. </span>; Tuba, J. F.; Sarker, M. R. A.; Momen,
+							S.;
+							Mohammed, N.; and Rahman, T. ‘<span class="font-italic font-weight-bold">Deep Learning based
+								Automatic Malaria Parasite detection from Blood Smear and its Smartphone based
+								Application </span>’,
+							Diagnostics 2020, 10, 329. <a href="https://www.mdpi.com/2075-4418/10/5/329"> <i
+									class="fa fa-external-link"></i></a></li>
 
-  <section class="contact section" id="extra" style="background: ##394046;">
-          <div class="container">
-               <div class="row">
-		     <div class="col-lg-12 col-12 text-center mb-5">
-                          <h3 data-aos="fade-up" data-aos-delay="200">Co-curricular Activities</h3>
-                     </div>
-
-                    <div  data-aos="fade-up" data-aos-delay="500" class="ml-auto col-lg-12 col-md-12 col-12" style="text-align: justify;">
-                        <ul style="list-style-type:square;text-align: justify">
-				<li> Writes Bangla tutorials for the beginners to begin with programmatic knowledge.</li>
-				<li> Co-author of <a style="color:violet" href="https://play.google.com/store/apps/details?id=com.programmarc.cprogrammingbangla&hl=en&gl=US"> C Programming Bangla </a> App which reached almost 35 thousands students and currently available in Google play store.</li>
-				<li> Co-author of <a style="color:violet" href="https://play.google.com/store/apps/details?id=com.programmarc.java&hl=en&gl=US"> Java Programming Bangla </a> App which is also available in play store and already reached almost 25 thousands student.</li>
-			 
-			
-			</ul>
-                    </div>
-               </div>
-          </div>
-	  <div class="container">
-               <div class="row">
-		     <div class="col-lg-12 col-12 text-center mb-5">
-                          <h3 data-aos="fade-up" data-aos-delay="200">Leadership</h3>
-                     </div>
-
-                    <div  data-aos="fade-up" data-aos-delay="500" class="ml-auto col-lg-12 col-md-12 col-12" style="text-align: justify;">
-		    	<p style="text-align: justify;">
-				I joined Bangladesh Military Academy as a 𝐆𝐞𝐧𝐭𝐥𝐞𝐦𝐚𝐧 𝐂𝐚𝐝𝐞𝐭 (𝐂𝐮𝐫𝐫𝐞𝐧𝐭𝐥𝐲 𝐎𝐟𝐟𝐢𝐜𝐞𝐫 𝐂𝐚𝐝𝐞𝐭) of 74 𝐁𝐌𝐀 𝐋/𝐂. 
-				Unfortunately (due to fracture in neck of femur) I could not continue my service life. 
-				As a Military veteran followings are my experienced :	
-			</p>
-                        <ul style="list-style-type:square;text-align: justify">
-				<li> Trained to become a leader and hard worker.</li>
-				<li> Trained to become a decision maker.</li>
-				<li> Trained to perform as a team leader/team member under tremendous pressure.</li>
-				<li> Trained on strengthening mental ability, accept and outfight the professional challenges.</li>
-			</ul>
-                    </div>
-               </div>
-          </div>
-     </section>
+						<li class="mt-3"><span class="fa-li"><i class="fa fa-check-square"
+									style="color:black"></i></span> Roy, k.; Hasan, M.; <span
+								class="font-weight-bold">Fuhad, K. M. F. </span>; Mohammed, N.; Rabby, A. K. M. S.;
+							Hasan, N.; Nahar, J. and
+							Rahman, F. ‘<span class="font-italic font-weight-bold">Bangla Part of Speech tagging using
+								Contextual Embeddings and Oversampling Techniques </span>’,
+							Future Technologies Conference 2020 (FTC – 2020), Vancouver, Canada. <a
+								href="https://link.springer.com/chapter/10.1007/978-3-030-63128-4_50"> <i
+									class="fa fa-external-link"></i></a></li>
 
 
-     <!-- FOOTER -->
-     <footer class="site-footer">
-          <div class="container">
-               <div class="row">
+						<li class="mt-3"><span class="fa-li"><i class="fa fa-check-square"
+									style="color:black"></i></span> <span class="font-weight-bold">Fuhad, K. M. F.
+							</span>; Tuba, J. F.; Rahman, T.; and Mohammed, N.
+							‘<span class="font-italic font-weight-bold">CNN Based Model for Malaria Diagnosis with
+								Knowledge Distillation </span>’,
+							4th International Conference on digital signal processing-2020 (ICDSP’20), Chengdu,
+							China,2020. <a href="https://dl.acm.org/doi/10.1145/3408127.3408159"> <i
+									class="fa fa-external-link"></i></a></li>
 
-                    <div class="col-lg-6 col-md-5">
-                        <p class="copyright-text">Copyright &copy; K. M. Faizullah Fuhad
-                    </div>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <p class="mr-4">
-                            <i class="fa fa-envelope-o mr-1"></i>
-                            <span>faizullahfuhad@gmail.com</span><br>
-			<i class="fa fa-envelope-o mr-1"></i>
-			    <span>faizullah.fuad@northsouth.edu</span>
-                        </p>
+	<section class="contact section" id="extra" style="background: ##394046;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-12 text-center mb-5">
+					<h3 data-aos="fade-up" data-aos-delay="200">Co-curricular Activities</h3>
+				</div>
 
-                        <p><i class="fa fa-phone mr-1"></i> +880 1749406545, +880 1521230171</p>
-                    </div>
-                    
-               </div>
-          </div>
-     </footer>
+				<div data-aos="fade-up" data-aos-delay="500" class="ml-auto col-lg-12 col-md-12 col-12"
+					style="text-align: justify;">
+					<ul style="list-style-type:square;text-align: justify">
+						<li> Writes Bangla tutorials for the beginners to begin with programmatic knowledge.</li>
+						<li> Co-author of <a style="color:violet"
+								href="https://play.google.com/store/apps/details?id=com.programmarc.cprogrammingbangla&hl=en&gl=US">
+								C Programming Bangla </a> App which reached almost 35 thousands students and currently
+							available in Google play store.</li>
+						<li> Co-author of <a style="color:violet"
+								href="https://play.google.com/store/apps/details?id=com.programmarc.java&hl=en&gl=US">
+								Java Programming Bangla </a> App which is also available in play store and already
+							reached almost 25 thousands student.</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-12 text-center mb-5">
+					<h3 data-aos="fade-up" data-aos-delay="200">Leadership</h3>
+				</div>
+
+				<div data-aos="fade-up" data-aos-delay="500" class="ml-auto col-lg-12 col-md-12 col-12"
+					style="text-align: justify;">
+					<p style="text-align: justify;">
+						I joined Bangladesh Military Academy as a 𝐆𝐞𝐧𝐭𝐥𝐞𝐦𝐚𝐧 𝐂𝐚𝐝𝐞𝐭 (𝐂𝐮𝐫𝐫𝐞𝐧𝐭𝐥𝐲
+						𝐎𝐟𝐟𝐢𝐜𝐞𝐫 𝐂𝐚𝐝𝐞𝐭) of 74 𝐁𝐌𝐀 𝐋/𝐂.
+						Unfortunately (due to fracture in neck of femur) I could not continue my service life.
+						As a Military veteran followings are my experienced :
+					</p>
+					<ul style="list-style-type:square;text-align: justify">
+						<li> Trained to become a leader and hard worker.</li>
+						<li> Trained to become a decision maker.</li>
+						<li> Trained to perform as a team leader/team member under tremendous pressure.</li>
+						<li> Trained on strengthening mental ability, accept and outfight the professional challenges.
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- FOOTER -->
+	<footer class="site-footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-6 col-md-5">
+					<p class="copyright-text">Copyright &copy; K. M. Faizullah Fuhad
+				</div>
+
+				<div class="col-lg-6 col-md-6 col-12">
+					<p class="mr-4">
+						<i class="fa fa-envelope-o mr-1"></i>
+						<span>faizullahfuhad@gmail.com</span><br>
+						<i class="fa fa-envelope-o mr-1"></i>
+						<span>faizullah.fuad@northsouth.edu</span>
+					</p>
+
+					<p><i class="fa fa-phone mr-1"></i> +880 1749406545, +880 1521230171</p>
+				</div>
+
+			</div>
+		</div>
+	</footer>
 
 
 
-     <!-- SCRIPTS -->
-     <script src="js/jquery.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/aos.js"></script>
-     <script src="js/smoothscroll.js"></script>
-     <script src="js/custom.js"></script>
+	<!-- SCRIPTS -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/custom.js"></script>
 
 </body>
+
 </html>
